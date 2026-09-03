@@ -2,7 +2,12 @@ package main
 
 // 导包用来输出输入
 import "fmt"
-
+// 枚举iota常用于定义一组连续的常量
+const (
+	StatusPending = iota  // 0
+	StatusRunning		  // 1	
+	StatusDone			  // 2
+)
 func main() {
 	// 显式声明类型
 	var x int =10
@@ -22,4 +27,5 @@ func main() {
 	y = 5
 
 	fmt.Println(x,name,y,z,a,b)
+	fmt.Println(StatusPending,StatusRunning,StatusDone)
 }
